@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document Object Model</title>
+</head>
+<body>
+	<ol id="lista">
+		<li id="primero">Lorem ipsum dolor sit amet.</li>
+		<li>Asperiores ad, quas unde. fuga.</li>
+	</ol>
+	<script type="text/javascript">
+		//var primerElemento = document.getElementById("primero");
+		//primerElemento.innerHTML = "Nuevo texto";// accediendo al primer elemento y cambiando su contenido
+
+		//tambien puedo acceder al elemento con textcontent
+
+		//primerElemento.textContent = "Nuevo texto programando en javascript";
+
+//para reemplazar nodos del DOM
+
+		var elemento = document.createElement("li"),contenido = document.createTextNode("Nuevo Texto");
+
+		elemento.appendChild(contenido);
+
+		var padre = document.getElementsByTagName("li")[0].parentNode;
+		referencia = document.getElementsByTagName("li")[0];
+		//padre.replaceChild(elemento,referencia);// elemento es el que vamos a colocar y  referencia el elementoque vamos a eliminar
+
+//ahora para eliminar nodos del Dom
+		padre.removeChild(referencia);
+
+
+
+
+		
+
+
+	</script>
+
+</body>
+</html>

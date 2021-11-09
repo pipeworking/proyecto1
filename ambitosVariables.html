@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Scope JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//scope = ambito, alcance
+//Globales:son las que se pueden acceder desde cualquier parte del programa
+/*Locales: son las creadas dentro de una función y solo se pueden acceder a ellas 
+desde su propia función o desde una función anidada.*/
+// desde dentro de una funcion podemos acceder a lo que está afuera pero no al contrario
+
+ //Utilizando varible global
+ 	(function(){// esto es una funcion auto invocada para proteger el codigo
+
+ 		var variableGlobal = "Esto es global"; // declarandola
+	var mifuncion = function() {  //creando la funcion
+		//alert(variableGlobal); 
+
+		// para mostrar un segundo alert con la varible modificad en su valor
+		//variableGlobal = "Esta es global modificada";
+		//alert(variableGlobal);
+
+		// para variable local
+		var variableLocal = "Esta es local";
+
+		//variableLocal = "ojo aqui esta es global pero no recomendada";// al quitarle la palabra var pasa a ser global
+		//alert(variableLocal);
+
+
+		var funcionLocal = function(){
+			var variableLocal = "Esta es otra variable local";
+			alert(variableLocal);
+		}
+
+		funcionLocal();
+	}
+
+
+	mifuncion(); // invocando la funcion
+	//alert(variableGlobal); // aca llamando a la variable y mostrando en pantalla
+	//alert(variableLocal);// accediendo al contenido de la variable que se convirtio en global
+	
+ 	})// fin de la funcion auto invocada
+	
+
+
+
+	</script>
+</body>
+</html>

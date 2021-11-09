@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arreglos</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		//Personas: 4  contador 3
+		var amigos = [" Alexandra", " Luz", " Stella", " Isabel"];
+		//amigos[0] = "Mariana"; // con esto estoy cambiando un nombre del arreglo
+
+		//amigos.length();// propiedad length para mirar la cantidad de elementos en el arreglo
+
+		//document.write(amigos.length);
+
+		//document.write("Tiene " + amigos.length + " amigos");
+
+		//amigos[amigos.length] = "Erika";// esta es para adicionar otro elemento dentro del arreglo
+
+
+		// la siguiente es para agregar mediante push
+		//amigos.push("Emmis", "Marina", "Luna");// metodo push para agregar elementos al arreglo
+
+
+		//para eliminar el ultimo elemento mediante metodo pop
+
+		//amigos.pop();// con esto eliminamos el ultimo elemento isabel
+
+		//var amigos2 =[" Helida", " Amparo", " Malena"];
+
+		//var amigos3 = amigos.concat(amigos2);
+
+		//document.write(amigos3);
+
+
+		//usando join para separar cada elemento por un determinado simbolo o letra
+		//document.write(amigos.join(" : "));
+		//document.write(amigos.join(" - "));
+		//document.write(amigos.join(" / "));
+		//document.write(amigos.join(" * "));
+
+		//var amigos2 = amigos.join(" | ");
+		//document.write(amigos2);
+
+
+		// para ordenar con sort
+		//var ordenados = amigos.sort();// ordena alfabeticamente
+		var ordenados = amigos.reverse();// ordena de atras hacia el comienzo
+		document.write(ordenados);
+
+
+	</script>
+
+</body>
+</html>

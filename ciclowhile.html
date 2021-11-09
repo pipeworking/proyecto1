@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ciclo while</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var dias =["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+	//var numeroDias = dias.length; // ojo si lo dejo asi me aparece despues del domingo la palabra undefined como otro dia de la semana 
+
+	var numeroDias	= dias.length - 1;
+		
+	var i = 0;
+	while (i <= numeroDias ){
+		document.write(dias[i] + "<br>" );
+		i++;
+	}
+
+	</script>	
+</body>
+</html>

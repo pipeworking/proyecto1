@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document Object Model</title>
+</head>
+<body>
+	<ol>
+		<li id= "lista">Lorem ipsum dolor sit amet.</li>
+		<li>Asperiores ad, quam unde. Fuga.</li>  
+	</ol>
+
+	<script type="text/javascript">
+		var elemento = document.createElement("li"),
+			contenido = document.createTextNode("Nuevo Texto");// creando un nodo de tipo texto
+
+			elemento.appendChild(contenido);//agregando al contenido
+			//document.body.appendChild(elemento);
+
+			//var padre = document.getElementById("lista");
+			// o
+			//var padre = document.getElementsByTagName("li")[0].parentNode;
+			//padre.appendChild(elemento);// agregando el contenido al final
+
+			// ahora para agregar el texto al comienzo
+		var padre = document.getElementsByTagName("li")[0].parentNode;
+			primerElemento = document.getElementsByTagName("li")[0];
+		padre.insertBefore(elemento, primerElemento);
+
+
+	</script>
+
+
+
+</body>
+</html>
